@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Water Quest | charity: water</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="game-container">
+
+    <!-- Game Title -->
+    <header>
+      <p class="brand">charity<span>:</span> water</p>
+      <h1>Water Quest</h1>
+      <p>Collect water to help bring clean water to communities!</p>
+    </header>
+
+    <!-- Difficulty Selection -->
+    <section class="difficulty-section">
+      <h2>Choose Your Difficulty</h2>
+
+      <div class="difficulty-buttons">
+        <button class="difficulty active" data-mode="easy">Easy</button>
+        <button class="difficulty" data-mode="normal">Normal</button>
+        <button class="difficulty" data-mode="hard">Hard</button>
+      </div>
+
+      <p id="difficulty-description">
+        Collect 10 water cans in 40 seconds!
+      </p>
+    </section>
+
+    <!-- Score, Goal, and Timer -->
+    <section class="game-info">
+
+      <div>
+        <span>Score</span>
+        <strong id="score">0</strong>
+      </div>
+
+      <div>
+        <span>Goal</span>
+        <strong id="goal">10</strong>
+      </div>
+
+      <div>
+        <span>Time</span>
+        <strong id="timer">40</strong>
+      </div>
+
+    </section>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- Game Board -->
+    <section id="game-board">
+
+      <div id="start-message">
+        <h2>Ready to Play?</h2>
+
+        <p>
+          Click the yellow water can every time it appears.
+          Reach your goal before time runs out!
+        </p>
+
+        <button id="start-button">Start Game</button>
+      </div>
+
+      <!-- Water Can -->
+      <button id="water-can" aria-label="Collect water">
+        💧
+      </button>
+
+    </section>
+
+    <!-- Feedback -->
+    <p id="feedback" aria-live="polite">
+      Click Start Game to begin!
+    </p>
+
+    <!-- Milestone Messages -->
+    <p id="milestone" aria-live="polite"></p>
+
+    <!-- Mission -->
+    <section class="mission">
+      <h2>Every Drop Counts!</h2>
+
+      <p>
+        Millions of people around the world lack access to
+        clean drinking water. charity: water works to bring
+        clean and safe water to communities in need.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Inspired by charity: water</p>
+
+      <div class="footer-links">
+        <a href="https://www.charitywater.org/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Learn More
+        </a>
+
+        <a href="https://www.charitywater.org/donate"
+           target="_blank"
+           rel="noopener noreferrer">
+          Donate
+        </a>
+      </div>
+
+      <p class="disclaimer">
+        Student-created educational game.
+      </p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
